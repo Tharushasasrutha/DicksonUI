@@ -1,0 +1,6 @@
+include README.md
+include LICENSE.txt
+include index.html
+include DicksonUI.js
+include splash.html
+include cycle.js
