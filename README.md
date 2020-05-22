@@ -3,7 +3,7 @@
 With DicksonUI, you can make Graphical User Interfaces with python with just few lines of code. DicksonUI is super easy to use and handles everything for you. Just write your code easily
 or import any HTML code.
 
-# Overview
+## Overview
 The DicksonUI Python GUI Library was written with lightweight use in mind. It provides the following key features
 
    lightweight(Around 5kb)
@@ -30,13 +30,6 @@ DicksonUI is available on python 2 and 3 both. Dosen"t require Additional depend
 ```
 If you use easy_install,  `easy_install browsergui`.
 If you don't like package managers, just download from Github and unzip   and put the  `browsergui`  folder anywhere on your Python path.
-### Using it
-
-DicksonUI was programmed with ease-of-use in mind. First, import Form and Controls from Scrapeasy
-
-```Python
-from scrapeasy import Form, Controls
-```
 
 ## Initialize a Window
 First, let's create a new Application. 
