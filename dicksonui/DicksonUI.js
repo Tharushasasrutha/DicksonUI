@@ -31,6 +31,12 @@ function notify_server(event) {
     request.send(JSON.stringify(JSON.decycle(data), null, 4));
 }
 
+function notify_data(data) {
+    console.log('notifying data:', data);
+    var request = new XMLHttpRequest();
+    request.open('post', window.location.href+'/data');
+    request.send(JSON.stringify(JSON.decycle(data), null, 4));
+}
 
 if (typeof JSON.decycle !== 'function') {
     (function() {
