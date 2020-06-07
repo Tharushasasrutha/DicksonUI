@@ -49,8 +49,8 @@ class firefox:
     #main-window {-moz-appearance: none !important;}
     #navigator-toolbox {visibility: collapse;}"""
         user = \
-            """user_pref(\"toolkit.legacyUserProfileCustomizations.stylesheets\", true);
-    user_pref(\"browser.tabs.drawInTitlebar\", true);"""
+            """user_pref(\"toolkit.legacyUserProfileCustomizations.stylesheets\", true);"""
+        """user_pref(\"browser.tabs.drawInTitlebar\", true);"""
         cwd = os.getcwd()
         if sys.platform in ['win32', 'win64']:
             try:
@@ -68,8 +68,8 @@ class firefox:
             try:
                 open(cwd + '\\userdata\\chrome\\userChrome.css', 'w'
                      ).write(css)
-            except Exception, e:
-                print e
+            except Exception as e:
+                print(e)
             try:
                 open(cwd + '\\userdata\\user.js', 'x')
             except:
@@ -77,8 +77,8 @@ class firefox:
             try:
                 open(cwd + '\\userdata\\user.js', 'w').write(user)
                 return cwd + '\\userdata'
-            except Exception, e:
-                print e
+            except Exception as e:
+                print(e)
         else:
             try:
                 os.mkdir(cwd + '/userdata')
@@ -95,8 +95,8 @@ class firefox:
             try:
                 open(cwd + '/userdata/chrome/userChrome.css', 'w'
                      ).write(css)
-            except Exception, e:
-                print e
+            except Exception as e:
+                print(e)
             try:
                 open(cwd + '/userdata/user.js', 'x')
             except:
@@ -104,8 +104,8 @@ class firefox:
             try:
                 open(cwd + '/userdata/user.js', 'w').write(user)
                 return cwd + '/userdata'
-            except Exception, e:
-                print e
+            except Exception as e:
+                print(e)
 
     def find_path(self):
         if sys.platform in ['win32', 'win64']:
