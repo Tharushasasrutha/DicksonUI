@@ -3,7 +3,7 @@
 #
 #  __init__.py
 #  
-from .browser import browser
-from .document import *
+from .Application import Application
+from .Form import *
 from .Controls import *
 from .Control import *
