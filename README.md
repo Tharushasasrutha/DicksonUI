@@ -5,19 +5,18 @@ or import any HTML code.
 
 ## Overview
 The DicksonUI Python GUI Library was written with lightweight use in mind. It provides the following key features
+- lightweight
+- Cross-Platform(Windows, Linux, Mac)
+- No Runtime Installer(Runtime is Browser)
+- Low Ram Usage(less on your script, all used by browser)
+- full featured(All features of html,css,js)
+- browser based(Any device has s browser installed)
+- powerful(power of bootstrap/AngularJS/React Coming Soon)
+- Extensible(write your own plugin and share)
+- HTML support - not just web pages - with js, css or any library(eg :-bootstap).
+- The most common Controls  (Text, Links, Paragraphs or Headings(6 sizes)) are already implemented
+- Events - with wide range of event data(all event is handling in own thread so no errors)
 
--   lightweight
--   Cross-Platform(Windows, Linux, Mac)
--   No Runtime Installer(Runtime is Browser)
--   Low Ram Usage(less on your script, all used by browser)
--   full featured(All features of html,css,js)
--   browser based(Any device has s browser installed)
--   powerful(power of bootstrap/AngularJS/React Coming Soon)
--   Extensible(write your own plugin and share)
--   HTML support - not just web pages - with js, css or any library(eg :-bootstap).
--   The most common Controls  (Text, Links, Paragraphs or Headings(6 sizes)) are already implemented
--   Events - with wide range of event data(all event is handling in own thread so no errors)
--
 ## Usage
 
 In the following paragraphs, I am going to describe how you can get and use DicksonUI for your own projects.
@@ -26,7 +25,7 @@ In the following paragraphs, I am going to describe how you can get and use Dick
 To download dicksonui, either fork this Github repo or simply use Pypi via pip.
 DicksonUI is available on python 2 and 3 both. Dosen"t require Additional dependencies
 ```sh
- $ pip install dicksonui
+$ pip install dicksonui
 ```
 If you use easy_install,  `easy_install browsergui`.
 If you don't like package managers, just download from Github and unzip   and put the  `browsergui`  folder anywhere on your Python path.
@@ -53,7 +52,7 @@ Or, For Python 2
 python myscript.py
 ```
 This will print a link
- `http://localhost:<port>`
+`http://localhost:<port>`
  
 Run your favorite browser
 ```sh
