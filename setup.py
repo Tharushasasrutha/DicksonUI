@@ -20,7 +20,7 @@ art ="""
 print(art)
 setup(
     name="DicksonUI",
-    version="1.1.1",
+    version="1.1.2",
     description="Lightweight And Full Featured Browser Based UI / GUI (Graphical User Interface Library)",
     long_description=README,
     long_description_content_type="text/markdown",
