@@ -15,28 +15,17 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: [3.5, 3.6, 3.7, 3.8]
+        python-version: [3.5, 3.6, 3.7, 3.8, 2.7]
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Set up Python ${{ matrix.python-version }}
+    - name: Setup Python
       uses: actions/setup-python@v2
       with:
+        # Version range or exact version of a Python version to use, using SemVer's version range syntax.
         python-version: ${{ matrix.python-version }}
-    - name: Install dependencies
+    - name: Build
       run: |
-        python -m pip install --upgrade pip
-        pip install pytest
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: Test with pytest
-      run: |
-        pytest
-    - name: Setup Python
-        uses: actions/setup-python@v2
-        with:
-          # Version range or exact version of a Python version to use, using SemVer's version range syntax.
-          python-version: # optional, default is 3.x
-          # The target architecture (x86, x64) of the Python interpreter.
-          architecture: # optional
-          # Used to pull python distributions from actions/python-versions. Since there's a default, this is typically not supplied by the user.
-          token: # optional, default is ${{ github.token }}
+        python setup.py sdist
+        python setup.py bdist
+        python setup.py bdist_wheel
+        python setup.py bdist_egg
