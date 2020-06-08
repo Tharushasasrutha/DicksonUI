@@ -27,6 +27,10 @@ DicksonUI is available on python 2 and 3 both. Dosen"t require Additional depend
 ```sh
 $ pip install dicksonui
 ```
+in python3 
+```sh
+$ pip install dicksonui
+```
 If you use easy_install,  `easy_install browsergui`.
 If you don't like package managers, just download from Github and unzip   and put the  `browsergui`  folder anywhere on your Python path.
 
@@ -36,7 +40,7 @@ First, let's create a new Application.
 ```Python
 from dicksonui import Form, Application
 Myform = Form()
-App = Aplication()
+App = Application()
 App.Add(Myform)
 print(App.location)
 ```
@@ -66,12 +70,12 @@ Okay, now that we will learn about Controls
 
 ```Python
 from dicksonui import Form, Application, Controls
-MyHeading = Controls.heading(1)
-Heading.innerHTML = """Hello world!
+MyHeading = Controls.Heading(1)
+MyHeading.innerHTML = """Hello world!
 bye!"""
 Myform = Form()
 Myform.Add(MyHeading)
-App = Aplication()
+App = Application()
 App.Add(Myform)
 print(App.location)
 ```
